@@ -1,0 +1,136 @@
+﻿@page
+@model IndexModel
+@{
+}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="~/img/instagram.png"/>
+    <link href="~/lib/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <!-- Logo de la aplicación-->
+            <div id="logo" class="pull-left">
+                <img src="~/img/logo.png" class="logoinsta" alt="Logo de Instagram" title="Instagram Logo" />
+                <!-- Navbar de la aplicacion-->
+                
+            </div>
+        </div>
+    </header><!-- final del header -->
+
+<main>
+	<div class="container">
+		<div class="profile">
+			<div class="profile-image">
+				<img class="profile-imagen"  src="~/img/profile.jpg" alt="ImagenPerfil">
+			</div>
+			<div class="profile-user-settings">
+				<p class="profile-user-name">Crigerpro</p>
+				<button class="btn profile-edit-btn">Editar Perfil</button>
+			</div>
+			<div class="profile-stats">
+				<ul>
+					<li><b><span class="profile-stat-count">6</span></b> publicaciones</li>
+					<li><b><span class="profile-stat-count">300</span></b> seguidores</li>
+					<li><b><span class="profile-stat-count">100</span></b> siguiendo</li>
+				</ul>
+			</div>
+			<div class="profile-bio">
+				<p>Proyecto Programación 3</p>
+			</div>
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+
+	<!-- End of container -->
+
+
+
+	<div class="container">
+
+		<div class="gallery">
+
+			<div class="gallery-item" tabindex="0">
+				<img  src="~/img/1.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 56</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 2</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+				<img  src="~/img/2.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 100</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 0</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="gallery-item" tabindex="0">
+				<img src="~/img/3.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 250</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 3</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+				<img src="~/img/4.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 190</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 1</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+				<img src="~/img/5.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 5</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 0</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+				<img src="~/img/6.jpg" class="gallery-image imagen" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><ion-icon name="heart"></ion-icon> 56</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><ion-icon name="browsers"></ion-icon> 2</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- End of gallery -->
+
+		<div class="loader"></div>
+
+	</div>
+	<!-- End of container -->
+
+</main>
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+	<script src="~/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/superfish/hoverIntent.js"></script>
+    <script src="~/lib/superfish/superfish.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+
+	<script src="js/main2.js"></script>
+</body>
+</html>

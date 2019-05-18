@@ -1,0 +1,105 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Inicio de Sesión</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="~/img/instagram.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/lib/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/lib/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/lib/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/lib/util.css">
+	<link rel="stylesheet" type="text/css" href="~/lib/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-pic js-tilt" data-tilt>
+				<!-- Imágen de Inicio de Sesión -->
+					<img src="~/img/imageninicio.jpg" alt="IMG">
+				</div>
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						<img class="logo" src="~/img/insta.png" alt="logo">
+					</span>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="userid" placeholder="Télefono, usuario o correo electrónico">						
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pswrd" placeholder="Contraseña">
+					</div>
+					<div class="container-login100-form-btn">
+						 <input class="btn btn-primary login100-form-btn" type="button" onclick="check(this.form)" value="Iniciar Sesión" />
+					</div>
+					<div class="text-center p-t-12">
+						<a class="txt2" href="#">
+							¿Olvidaste tu contraseña?
+						</a>
+					</div>
+					<div class="text-center p-t-12">
+							¿No tienes una cuenta?
+							<a class="txt2" href="#">
+								Registrate
+							</a>	
+					</div>
+				    <div class="text-center p-t-100">
+							Descarga la App<br>
+						<img class="logo2" src= "~/img/descargar.jpg" alt="IMG">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+
+
+<script>
+	var passwordPairs = {
+  "crigerprogrammer": "12345",
+  "admin": "admin"
+}
+
+function check(form) {
+  if (passwordPairs[form.userid.value] === form.pswrd.value)
+  { 
+    window.open('profile');
+    alert("Inicio de Sesión Correcto");
+    return false;
+  }
+}
+</script>
+</html>
